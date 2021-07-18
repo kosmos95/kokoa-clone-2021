@@ -1,0 +1,57 @@
+.nav {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box; /*padding이 있어도 그 값을 무시하라는 명령어이다. css가 */
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav_link {
+  position: relative;
+  color: #2e363e;
+}
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+.nav_notification {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+@keyframes appearbtn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.nav_btn {
+  transform: translatey(50px);
+  opacity: 0;
+  animation: appearbtn 0.3s ease-in-out forwards;
+}
+.nav_btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav_btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.nav_btn:last-child {
+  animation-delay: 0.9s;
+}

@@ -1,0 +1,18 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-row_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.icon-row_icon i {
+  /*아이콘만 지정해서 크비 변경*/
+  font-size: 35px;
+}
+.icon-row_icon span {
+  margin-top: 18px;
+}
